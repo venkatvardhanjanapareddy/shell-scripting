@@ -33,4 +33,4 @@ echo "first sweet is: ${sweets[0]}"
 name="Venkat Vardhan J"
 echo "$nameanapareddy" #this don't give any output as there is no variable named nameanapareddy
 
-echo "${name}anapareddy"
+echo "${name}anapareddy" #this give Venkat Vardhan Janapareddy, using {} will help the sheel to understand what is variable name and considers the text inside it.
