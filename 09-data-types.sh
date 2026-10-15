@@ -6,6 +6,6 @@ var1=23
 var2=37
 var3="DevOpsAWS"
 
-count=var1+var2
+count=$var1+$var2
 echo "total is: $count"
 
