@@ -31,4 +31,6 @@ echo "first sweet is: ${sweets[0]}"
 # the significance of {} braces is shown below
 
 name="Venkat Vardhan J"
-echo "$nameanapareddy"
+echo "$nameanapareddy" #this don't give any output as there is no variable named nameanapareddy
+
+echo "${name}anapareddy"
