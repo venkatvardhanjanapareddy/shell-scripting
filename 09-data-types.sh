@@ -7,5 +7,7 @@ var2=37
 var3="DevOpsAWS"
 
 count=$var1+$var2
-echo "total is: $count"
+echo "total with just adding variables with + is: $count"
 
+total=$(($count))
+echo "total with dollar and parenthesis is: $total"
