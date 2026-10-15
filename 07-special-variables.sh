@@ -17,3 +17,7 @@ wait $! #script waits until the $! command completes
 echo "wait over"
 echo "Time taken for script execution: $SECONDS"
 echo "Gives the Line number: $LINENO"
+echo "Gives the previous command exit status: $?"
+
+exit_status=$($?)
+echo "$exit_status"
