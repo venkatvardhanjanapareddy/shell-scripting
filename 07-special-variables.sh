@@ -13,11 +13,11 @@ echo "Gives PWD of the script: $PWD"
 echo "Gives PID of the current script: $$"
 sleep 10 &
 echo "This gives PID of the background script: $!"
-wait $! #script waits until the $! command completes
+# wait $! #script waits until the $! command completes
 echo "wait over"
 echo "Time taken for script execution: $SECONDS"
 echo "Gives the Line number: $LINENO"
-echo "Gives the previous command exit status: $?"
+# echo "Gives the previous command exit status: $?"
 
-exit_status=$(($?))
+exit_status=$(($?))   #assigning an o/p as a value to variable
 echo "exit status value is: $exit_status"
