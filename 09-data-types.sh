@@ -16,12 +16,13 @@ sumwithstring=$(($var1+$var2+$var3)) #string is considered as 0 value
 echo "The string variable is added, the total is: $sumwithstring" 
 
 
-# instead of using $(()) and declaring the variable is int
+# instead of using $(()) and declaring the variable as int
 declare -i canada=7
 canada=canada+3
 
 echo "The sum of canada is: $canada"
 
 
-# ///////////////////////////////////
-
+# /////////////////////////////////// array
+sweets=("jalebi" "gulab jamun" "mysorepak")
+echo "first sweet is: ${sweets[0]}"
