@@ -2,8 +2,9 @@
 
 echo "special variables starts"
 echo "This gives all entered args: $@"
-echo "This gives the first arg: $#"
+echo "This gives the number of arg: $#"
 echo "THis gives the args as a single word: $*"
+echo "Gives the first arg passed: $1"
 echo "This gives the script file name: $0"
 echo "Realpath of file: $(realpath $0)"
 echo "Gives who is running the script: $USER"
