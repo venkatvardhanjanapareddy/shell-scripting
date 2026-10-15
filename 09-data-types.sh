@@ -28,3 +28,7 @@ sweets=("jalebi" "gulab jamun" "mysorepak")
 echo "All sweets ${sweets[@]}"
 echo "first sweet is: ${sweets[0]}"
 
+# the significance of {} braces is shown below
+
+name="Venkat Vardhan J"
+echo "$nameanapareddy"
