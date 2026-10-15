@@ -19,5 +19,5 @@ echo "Time taken for script execution: $SECONDS"
 echo "Gives the Line number: $LINENO"
 echo "Gives the previous command exit status: $?"
 
-exit_status=$($?)
+exit_status=$(($?))
 echo "$exit_status"
