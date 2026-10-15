@@ -26,3 +26,5 @@ echo "The sum of canada is: $canada"
 # /////////////////////////////////// array
 sweets=("jalebi" "gulab jamun" "mysorepak")
 echo "first sweet is: ${sweets[0]}"
+
+echo "All sweets $sweets[@]"
