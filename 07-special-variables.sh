@@ -13,3 +13,5 @@ echo "Gives PWD of the script: $PWD"
 echo "Gives PID of the current script: $$"
 sleep 10 &
 echo "This gives PID of the background script: $!"
+wait $! #script waits until the $! command completes
+echo "wait over"
