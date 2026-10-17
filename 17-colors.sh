@@ -13,7 +13,7 @@ N=\e[0m #regular color
 
 # echo "user is $user"
 if [ $user -ne 0 ]; then
-echo "try installing with sudo access"
+echo "try installing with ${R}sudo${N} access"
 exit 1
 fi
 
