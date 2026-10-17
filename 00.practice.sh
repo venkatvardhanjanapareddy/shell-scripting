@@ -26,6 +26,12 @@ var2=6
 var3=$(($var1+$var2))
 echo $var3
 
+#datatypes
 declare -i var5=10
 var5=var5+1
 echo "int declaring $var5"
+
+#array
+bikes=("ktm250" "rc200" "scram400x")
+echo "$bikes{@}"
+echo "$bikes{0}"
