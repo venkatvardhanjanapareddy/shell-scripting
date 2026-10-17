@@ -35,3 +35,13 @@ echo "int declaring $var5"
 bikes=("ktm250" "rc200" "scram400x")
 echo "${bikes[@]}"
 echo "${bikes[0]}"
+
+#let's get the number and give speeding ticket
+echo "enter the speed"
+read speed
+if [ $speed -lt 50 ]; then
+echo  "It's normal speed - no ticket"
+elif [ $speed -lt 70 ]; then
+echo "Speed as per the sign - no ticket"
+else 
+echo "over speeding - ticket 100$"
