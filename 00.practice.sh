@@ -14,3 +14,14 @@ sleep 10 & # & is used to make it run background
 echo "to get the background code pid $!"
 echo "to know if the previous line is a success $?"
 echo "script execution time $SECONDS"
+
+# varaibles, data types, conditions, loops, functions, error handling
+
+my_name=vardhan
+echo "User name is $my_name"
+
+var1=3
+var2=6
+
+var3=$(($var1+$var2))
+echo $var3
