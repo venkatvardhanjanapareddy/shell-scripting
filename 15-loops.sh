@@ -14,8 +14,6 @@ mkdir -p $log_folder
 
 echo "Script execution started at $(date +"%F %T")" &>> $log_file
 
-echo "Installing nginx"
-
 validate(){
 if [ $1 -ne 0 ]; then
 echo "FAILED: $2" | tee -a $log_file
@@ -25,13 +23,11 @@ echo "SUCCESS: $2" | tee -a $log_file
 fi
 }
 
-for package in $a
+for package in $@
 do
 echo "Started installing $package"
 dnf install $package -y &>> $log_file
 validate $? "installing $package"
 done
-
-echo "completed"
 
 echo "Script execution ended at $(date +"%F %T")" &>> $log_file
