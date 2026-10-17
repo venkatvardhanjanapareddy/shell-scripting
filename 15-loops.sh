@@ -32,6 +32,6 @@ dnf install $package -y &>> $log_file
 validate $? "installing $package"
 done
 
-echo "proceeding..."
+echo "completed"
 
 echo "Script execution ended at $(date +"%F %T")" &>> $log_file
