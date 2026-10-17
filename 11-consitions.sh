@@ -20,7 +20,7 @@ echo "error installing nginx server"
 exit 1
 fi
 
-echo "still proceeding to mysql"
+echo "now proceeding to install mysql"
 
 dnf install mysql -y
 if [ $? -ne 0 ]; then
