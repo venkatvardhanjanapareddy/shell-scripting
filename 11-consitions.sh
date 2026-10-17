@@ -13,3 +13,10 @@ echo "try installing with sudo access"
 exit 1
 fi
 echo "proceeding"
+
+dnf install nginxyx -y
+if [ $? -ne 0 ]; then
+echo "error installing server"
+fi
+
+echo "still proceeding"
