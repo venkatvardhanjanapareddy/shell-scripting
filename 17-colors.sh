@@ -6,10 +6,10 @@ user=$(id -u)
 log_folder="/var/log/shell-script"
 log_file="${log_folder}/${0}.log"
 
-R=\e[31m #red
-G=\e[32m #green
-Y=\e[33m #yellow
-N=\e[0m #regular color
+R="\e[31m" #red
+G="\e[32m" #green
+Y="\e[33m" #yellow
+N="\e[0m" #regular color
 
 # echo "user is $user"
 if [ $user -ne 0 ]; then
