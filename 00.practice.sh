@@ -25,3 +25,7 @@ var2=6
 
 var3=$(($var1+$var2))
 echo $var3
+
+declare -i var5=10
+var5=var5+1
+echo "int declaring $var5"
