@@ -13,3 +13,4 @@ echo "to get the pid $$"
 sleep 10 & # & is used to make it run background
 echo "to get the background code pid $!"
 echo "to know if the previous line is a success $?"
+echo "script execution time $SECONDS"
