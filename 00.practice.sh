@@ -45,3 +45,4 @@ elif [ $speed -lt 70 ]; then
 echo "Speed as per the sign - no ticket"
 else 
 echo "over speeding - ticket 100$"
+fi
