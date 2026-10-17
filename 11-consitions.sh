@@ -16,8 +16,16 @@ echo "proceeding"
 
 dnf install nginxyx -y
 if [ $? -ne 0 ]; then
-echo "error installing server"
+echo "error installing nginx server"
 exit 1
 fi
 
-echo "still proceeding"
+echo "still proceeding to mysql"
+
+dnf install mysql -y
+if [ $? -ne 0 ]; then
+echo "Error installing mysql server"
+exit 1
+fi
+
+echo "success installing nginx and mysql"
