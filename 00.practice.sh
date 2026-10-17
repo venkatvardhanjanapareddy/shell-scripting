@@ -33,5 +33,5 @@ echo "int declaring $var5"
 
 #array
 bikes=("ktm250" "rc200" "scram400x")
-echo "$bikes{@}"
-echo "$bikes{0}"
+echo "${bikes[@]}"
+echo "${bikes[0]}"
