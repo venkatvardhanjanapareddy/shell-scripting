@@ -10,5 +10,5 @@ user=$(id -u)
 echo "user is $user"
 if [ $user -ne 0 ]; then
 echo "try installing with sudo access"
-
+fi
 echo "proceeding"
