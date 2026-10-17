@@ -12,7 +12,7 @@ if [ $user -ne 0 ]; then
 echo "try installing with sudo access"
 exit 1
 fi
-echo "proceeding"
+echo "Installing nginx"
 
 dnf install nginx -y
 if [ $? -ne 0 ]; then
@@ -20,12 +20,13 @@ echo "error installing nginx server"
 exit 1
 fi
 
+echo "Installing nginx: SUCCESS"
 echo "now proceeding to install mysql"
 
 dnf install mysqll -y
 if [ $? -ne 0 ]; then
-echo "Error installing mysql server"
+echo "Error installing mysql server .. FAILURE"
 exit 1
 fi
 
-echo "success installing nginx and mysql"
+echo "SUCCESS installing nginx and mysql"
