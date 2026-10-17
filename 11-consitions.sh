@@ -17,6 +17,7 @@ echo "proceeding"
 dnf install nginxyx -y
 if [ $? -ne 0 ]; then
 echo "error installing server"
+exit 1
 fi
 
 echo "still proceeding"
