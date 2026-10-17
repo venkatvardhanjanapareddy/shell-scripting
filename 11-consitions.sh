@@ -18,15 +18,18 @@ dnf install nginx -y
 if [ $? -ne 0 ]; then
 echo "error installing nginx server"
 exit 1
+else 
+echo "Installing nginx: SUCCESS"
 fi
 
-echo "Installing nginx: SUCCESS"
 echo "now proceeding to install mysql"
 
-dnf install mysqll -y
+dnf install mysql -y
 if [ $? -ne 0 ]; then
 echo "Error installing mysql server .. FAILURE"
 exit 1
+else
+echo "SUCCESS installing nginx and mysql"
 fi
 
-echo "SUCCESS installing nginx and mysql"
+echo "proceeding..."
