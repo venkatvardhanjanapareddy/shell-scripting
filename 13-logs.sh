@@ -6,13 +6,15 @@ log_folder="/var/log/shell-script"
 log_file="${log_folder}/${0}.log"
 
 
-echo "user is $user"
+# echo "user is $user"
 if [ $user -ne 0 ]; then
 echo "try installing with sudo access"
 exit 1
 fi
 
 mkdir -p $log_folder
+
+echo "Script execution started at $(date +"%F %T")" &>> $log_file
 
 echo "Installing nginx"
 
@@ -35,3 +37,5 @@ dnf install mysql -y &>> $log_file
 validate $? "Installing mysql"
 
 echo "proceeding..."
+
+echo "Script execution ended at $(date +"%F %T")" &>> $log_file
